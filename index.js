@@ -38,6 +38,14 @@ function generatePlaylist(guardians, songs) {
 }
 
 // Call generatePlaylist and display the playlists for each Guardian
-generatePlaylist(guardians, songs);
+const playlists = generatePlaylist(guardians, songs);
 
+//Displaying the playlists
 
+for (const guardian in playlists) {
+    console.log(`${guardian}'s playlist:`)
+    playlists[guardian].foreach(song => {
+        console.log(`- ${song.title} by ${song.artist}`);
+    });
+    console.log(``); // Blank line for readability
+}
