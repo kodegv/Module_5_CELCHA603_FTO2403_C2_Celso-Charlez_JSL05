@@ -69,5 +69,6 @@ function displayPlaylists(playlists) {
 }
 
 // Call generatePlaylist and display the playlists for each Guardian
-generatePlaylist(guardians, songs);
+const playlists = generatePlaylist(guardians, songs);
+displayPlaylists(playlists);
 
