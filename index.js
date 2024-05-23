@@ -40,7 +40,7 @@ function generatePlaylist(guardians, songs) {
 // Call generatePlaylist and display the playlists for each Guardian
 const playlists = generatePlaylist(guardians, songs);
 
-//Displaying the playlists
+//Displaying the playlists in console logs
 
 for (const guardian in playlists) {
     console.log(`${guardian}'s playlist:`)
